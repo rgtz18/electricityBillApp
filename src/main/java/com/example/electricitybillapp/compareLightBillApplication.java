@@ -12,14 +12,14 @@ public class compareLightBillApplication extends Application {
     // The start method is the main entry point for all JavaFX applications
     @Override
     public void start(Stage stage) throws IOException {
-        // FXMLLoader loads an FXML document to create a new scene. "hello-view.fxml" defines the GUI layout
-        FXMLLoader fxmlLoader = new FXMLLoader(compareLightBillApplication.class.getResource("hello-view.fxml"));
+        // FXMLLoader loads an FXML document to create a new scene. "app-view.fxml" defines the GUI layout
+        FXMLLoader fxmlLoader = new FXMLLoader(compareLightBillApplication.class.getResource("app-view.fxml"));
 
         // Create a new scene with the FXML layout, set its width to 320 and height to 240
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
 
         // Set the title of the window (Stage) to "Hello!"
-        stage.setTitle("Hello!");
+        stage.setTitle("Compare Light Company");
 
         // Set the scene for this stage to the one we just created
         stage.setScene(scene);

@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="893e0e7d-97d7-4019-9744-80814acf390f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="893e0e7d-97d7-4019-9744-80814acf390f" name="Changes" comment="Created Imports, Application class, start method and main method.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/app-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/compareLightBillApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/compareLightBillApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +63,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715631892432</updated>
-      <workItem from="1715631893713" duration="2856000" />
+      <workItem from="1715631893713" duration="10919000" />
     </task>
+    <task id="LOCAL-00001" summary="Created Imports, Application class, start method and main method.">
+      <created>1715634918686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715634918686</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created Imports, Application class, start method and main method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Imports, Application class, start method and main method." />
   </component>
 </project>
