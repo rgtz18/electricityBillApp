@@ -1,46 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.electricitybillapp.AppController">
+<ScrollPane fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.electricitybillapp.AppController">
+    <VBox alignment="CENTER" spacing="10.0">
+        <Label text="Input rates for each company (cents per watt):" style="-fx-font-weight: bold;"/>
+        <TextField fx:id="wattageRateCompanyOne" promptText="Enter rate for Company 1" prefWidth="200"/>
+        <TextField fx:id="wattageRateCompanyTwo" promptText="Enter rate for Company 2" prefWidth="200"/>
 
-    <!-- Input fields for the electricity rate in cents per watt for each company -->
-    <TextField fx:id="wattageRateCompanyOne" promptText="Enter rate for Company 1 (cents/watt)"/>
-    <TextField fx:id="wattageRateCompanyTwo" promptText="Enter rate for Company 2 (cents/watt)"/>
+        <Label text="Enter monthly wattage:" style="-fx-font-weight: bold;"/>
+        <TextField fx:id="janWattage" promptText="January wattage" prefWidth="100"/>
+        <TextField fx:id="febWattage" promptText="February wattage" prefWidth="100"/>
+        <TextField fx:id="marWattage" promptText="March wattage" prefWidth="100"/>
+        <TextField fx:id="aprWattage" promptText="April wattage" prefWidth="100"/>
+        <TextField fx:id="mayWattage" promptText="May wattage" prefWidth="100"/>
+        <TextField fx:id="junWattage" promptText="June wattage" prefWidth="100"/>
+        <TextField fx:id="julWattage" promptText="July wattage" prefWidth="100"/>
+        <TextField fx:id="augWattage" promptText="August wattage" prefWidth="100"/>
+        <TextField fx:id="sepWattage" promptText="September wattage" prefWidth="100"/>
+        <TextField fx:id="octWattage" promptText="October wattage" prefWidth="100"/>
+        <TextField fx:id="novWattage" promptText="November wattage" prefWidth="100"/>
+        <TextField fx:id="decWattage" promptText="December wattage" prefWidth="100"/>
 
-    <!-- Input fields for the electricity rate in cents per watt for each company -->
-    <TextField fx:id="janWattage" promptText="Enter January wattage"/>
-    <TextField fx:id="febWattage" promptText="Enter February wattage"/>
-    <TextField fx:id="marWattage" promptText="Enter March wattage"/>
-    <TextField fx:id="aprWattage" promptText="Enter April wattage"/>
-    <TextField fx:id="mayWattage" promptText="Enter May wattage"/>
-    <TextField fx:id="junWattage" promptText="Enter June wattage"/>
-    <TextField fx:id="julWattage" promptText="Enter July wattage"/>
-    <TextField fx:id="augWattage" promptText="Enter August wattage"/>
-    <TextField fx:id="sepWattage" promptText="Enter September wattage"/>
-    <TextField fx:id="octWattage" promptText="Enter October wattage"/>
-    <TextField fx:id="novWattage" promptText="Enter November wattage"/>
-    <TextField fx:id="decWattage" promptText="Enter December wattage"/>
 
-    <!-- Dropdowns for selecting each electricity company -->
-    <ComboBox fx:id="companyOneComboBox" promptText="Select Company 1"/>
-    <ComboBox fx:id="companyTwoComboBox" promptText="Select Company 2"/>
+        <Label text="Select companies to compare:" style="-fx-font-weight: bold;"/>
+        <ComboBox fx:id="companyOneComboBox" promptText="Select Company 1"/>
+        <ComboBox fx:id="companyTwoComboBox" promptText="Select Company 2"/>
 
-    <!-- Line Chart for displaying the financial difference -->
-    <LineChart fx:id="lineChart">
-        <xAxis>
-            <NumberAxis label="Month"/>
-        </xAxis>
-        <yAxis>
-            <NumberAxis label="Cost Difference"/>
-        </yAxis>
-    </LineChart>
-    <Button text="Compare" onAction="#compareCompanies"/>
-</VBox>
-
+        <LineChart fx:id="lineChart">
+            <xAxis>
+                <CategoryAxis fx:id="monthAxis" label="Month"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Cost Difference"/>
+            </yAxis>
+        </LineChart>
+        <Button text="Compare" onAction="#compareCompanies"/>
+    </VBox>
+</ScrollPane>

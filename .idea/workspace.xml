@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="893e0e7d-97d7-4019-9744-80814acf390f" name="Changes" comment="Created Imports, Application class, start method and main method.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/app-view.fxml" afterDir="false" />
+    <list default="true" id="893e0e7d-97d7-4019-9744-80814acf390f" name="Changes" comment="Added inputs for monthly wattage usage for company 1 and 2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/compareLightBillApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/compareLightBillApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/app-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/app-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/rguti/IdeaProjects/electricityBillApp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rguti/IdeaProjects/electricityBillApp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715631892432</updated>
-      <workItem from="1715631893713" duration="10919000" />
+      <workItem from="1715631893713" duration="14814000" />
+      <workItem from="1715874322486" duration="5942000" />
     </task>
     <task id="LOCAL-00001" summary="Created Imports, Application class, start method and main method.">
       <created>1715634918686</created>
@@ -72,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715634918686</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added inputs for monthly wattage usage for company 1 and 2.">
+      <created>1715711315362</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715711315362</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +86,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Imports, Application class, start method and main method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Imports, Application class, start method and main method." />
+    <MESSAGE value="Added inputs for monthly wattage usage for company 1 and 2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added inputs for monthly wattage usage for company 1 and 2." />
   </component>
 </project>
