@@ -15,8 +15,8 @@ public class compareLightBillApplication extends Application {
         // FXMLLoader loads an FXML document to create a new scene. "app-view.fxml" defines the GUI layout
         FXMLLoader fxmlLoader = new FXMLLoader(compareLightBillApplication.class.getResource("app-view.fxml"));
 
-        // Create a new scene with the FXML layout, set its width to 320 and height to 240
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        // Create a new scene with the FXML layout, set its width to 800 and height to 600
+        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
 
         // Set the title of the window (Stage) to "Hello!"
         stage.setTitle("Compare Light Company");
