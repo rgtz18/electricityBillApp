@@ -7,28 +7,38 @@
     <VBox alignment="CENTER" spacing="10.0">
         <VBox alignment="CENTER_LEFT" spacing="5" style="-fx-padding: 0 0 0 20;">
             <Label style="-fx-font-weight: bold;" text="Input rates for each company (cents per watt):" />
+            <HBox alignment="CENTER_LEFT" spacing="10">
             <TextField fx:id="wattageRateCompanyOne" prefWidth="200" minWidth="200" maxWidth="200" promptText="Enter rate for Company 1" />
             <TextField fx:id="wattageRateCompanyTwo" prefWidth="200" minWidth="200" maxWidth="200" promptText="Enter rate for Company 2" />
+            </HBox>
 
             <Label style="-fx-font-weight: bold;" text="Enter monthly wattage:" />
+            <HBox alignment="CENTER_LEFT" spacing="10">
             <TextField fx:id="janWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="January wattage" />
             <TextField fx:id="febWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="February wattage" />
             <TextField fx:id="marWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="March wattage" />
             <TextField fx:id="aprWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="April wattage" />
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10">
             <TextField fx:id="mayWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="May wattage" />
             <TextField fx:id="junWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="June wattage" />
             <TextField fx:id="julWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="July wattage" />
             <TextField fx:id="augWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="August wattage" />
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10">
             <TextField fx:id="sepWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="September wattage" />
             <TextField fx:id="octWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="October wattage" />
             <TextField fx:id="novWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="November wattage" />
             <TextField fx:id="decWattage" prefWidth="200" minWidth="200" maxWidth="200" promptText="December wattage" />
+            </HBox>
         </VBox>
 
-        <VBox alignment="CENTER">
+        <VBox alignment="CENTER_LEFT" spacing="5" style="-fx-padding: 0 0 0 20;">
             <Label style="-fx-font-weight: bold;" text="Select companies to compare:" />
+            <HBox alignment="CENTER_LEFT" spacing="10">
             <ComboBox fx:id="companyOneComboBox" promptText="Select Company 1" />
             <ComboBox fx:id="companyTwoComboBox" promptText="Select Company 2" />
+            </HBox>
 
             <LineChart fx:id="lineChart">
                 <xAxis>
