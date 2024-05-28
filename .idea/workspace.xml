@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="893e0e7d-97d7-4019-9744-80814acf390f" name="Changes" comment="Created VBOX for textfield and left aligned, dropped down menu now contains companies to pick from, combobox 1 &amp; 2 display companies chosen">
+    <list default="true" id="893e0e7d-97d7-4019-9744-80814acf390f" name="Changes" comment="Created Hbox's to make my text fields horizontally placed 4x3. Did the same for the rates and combobox">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/app-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/app-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +71,7 @@
       <workItem from="1716390439775" duration="993000" />
       <workItem from="1716478384927" duration="2212000" />
       <workItem from="1716486418604" duration="7983000" />
-      <workItem from="1716834903773" duration="4145000" />
+      <workItem from="1716834903773" duration="8445000" />
     </task>
     <task id="LOCAL-00001" summary="Created Imports, Application class, start method and main method.">
       <created>1715634918686</created>
@@ -100,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716515883015</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created Hbox's to make my text fields horizontally placed 4x3. Did the same for the rates and combobox">
+      <created>1716841953094</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716841953094</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +119,7 @@
     <MESSAGE value="Added inputs for monthly wattage usage for company 1 and 2." />
     <MESSAGE value="Decided to instead of manually parsing using loops to simplify my code. Added the months to the x axis. Added Scroll Pane and made it the root" />
     <MESSAGE value="Created VBOX for textfield and left aligned, dropped down menu now contains companies to pick from, combobox 1 &amp; 2 display companies chosen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created VBOX for textfield and left aligned, dropped down menu now contains companies to pick from, combobox 1 &amp; 2 display companies chosen" />
+    <MESSAGE value="Created Hbox's to make my text fields horizontally placed 4x3. Did the same for the rates and combobox" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Hbox's to make my text fields horizontally placed 4x3. Did the same for the rates and combobox" />
   </component>
 </project>

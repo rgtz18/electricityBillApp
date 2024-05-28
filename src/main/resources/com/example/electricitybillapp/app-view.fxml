@@ -8,8 +8,20 @@
         <VBox alignment="CENTER_LEFT" spacing="5" style="-fx-padding: 0 0 0 20;">
             <Label style="-fx-font-weight: bold;" text="Input rates for each company (cents per watt):" />
             <HBox alignment="CENTER_LEFT" spacing="10">
-            <TextField fx:id="wattageRateCompanyOne" prefWidth="200" minWidth="200" maxWidth="200" promptText="Enter rate for Company 1" />
-            <TextField fx:id="wattageRateCompanyTwo" prefWidth="200" minWidth="200" maxWidth="200" promptText="Enter rate for Company 2" />
+            <TextField fx:id="wattageRateCompanyOne" prefWidth="200" minWidth="200" maxWidth="200" promptText="Enter rate for Company A" />
+            <TextField fx:id="wattageRateCompanyTwo" prefWidth="200" minWidth="200" maxWidth="200" promptText="Enter rate for Company B" />
+            </HBox>
+
+            <Label style="-fx-font-weight: bold;" text="Enter base for each company:" />
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <TextField fx:id="baseRateCompanyOne" prefWidth="200" minWidth="200" maxWidth="200" promptText="Enter base for Company A" />
+                <TextField fx:id="baseRateCompanyTwo" prefWidth="200" minWidth="200" maxWidth="200" promptText="Enter base for Company B" />
+            </HBox>
+
+            <Label style="-fx-font-weight: bold;" text="Enter TDU for each company:" />
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <TextField fx:id="tduCompanyOne" prefWidth="200" minWidth="200" maxWidth="200" promptText="Enter tdu for Company A" />
+                <TextField fx:id="tduCompanyTwo" prefWidth="200" minWidth="200" maxWidth="200" promptText="Enter tdu for Company B" />
             </HBox>
 
             <Label style="-fx-font-weight: bold;" text="Enter monthly wattage:" />

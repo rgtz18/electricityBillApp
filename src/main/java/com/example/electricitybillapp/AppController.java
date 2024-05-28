@@ -17,12 +17,20 @@ public class AppController {
     @FXML private TextField janWattage, febWattage, marWattage, aprWattage, mayWattage, junWattage, julWattage, augWattage, sepWattage, octWattage, novWattage, decWattage;
     @FXML private LineChart<String, Number> lineChart;
     @FXML private CategoryAxis monthAxis;
+    @FXML private TextField baseRateCompanyOne;
+    @FXML private TextField baseRateCompanyTwo;
+    @FXML private TextField tduCompanyOne;
+    @FXML private TextField tduCompanyTwo;
 
     @FXML
     public void initialize() {
         populateCompanyChoices();
         addTextLimiter(wattageRateCompanyOne, 10);
         addTextLimiter(wattageRateCompanyTwo, 10);
+        addTextLimiter(baseRateCompanyOne, 10);
+        addTextLimiter(baseRateCompanyTwo, 10);
+        addTextLimiter(tduCompanyOne, 10);
+        addTextLimiter(tduCompanyTwo, 10);
         TextField[] wattages = {janWattage, febWattage, marWattage, aprWattage, mayWattage, junWattage, julWattage, augWattage, sepWattage, octWattage, novWattage, decWattage};
         for (TextField wattage : wattages) {
             addTextLimiter(wattage, 10);
@@ -33,6 +41,12 @@ public class AppController {
     protected void compareCompanies() {
         double rate1 = Double.parseDouble(wattageRateCompanyOne.getText());
         double rate2 = Double.parseDouble(wattageRateCompanyTwo.getText());
+
+        double base1 = Double.parseDouble(baseRateCompanyOne.getText());
+        double base2 = Double.parseDouble(baseRateCompanyTwo.getText());
+
+        double tdu1 = Double.parseDouble(tduCompanyOne.getText());
+        double tdu2 = Double.parseDouble(tduCompanyTwo.getText());
 
         XYChart.Series<String, Number> series1 = new XYChart.Series<>();
         series1.setName(companyOneComboBox.getValue() != null ? companyOneComboBox.getValue() : "Company 1");
@@ -46,8 +60,8 @@ public class AppController {
         String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
         for (int i = 0; i < months.length; i++) {
-            double usage1 = getWattageFromTextField(wattages[i]) * rate1;
-            double usage2 = getWattageFromTextField(wattages[i]) * rate2;
+            double usage1 = getWattageFromTextField(wattages[i]) * rate1 + (base1 + tdu1);
+            double usage2 = getWattageFromTextField(wattages[i]) * rate2 + (base2 + tdu2);
             series1.getData().add(new XYChart.Data<>(months[i], usage1));
             series2.getData().add(new XYChart.Data<>(months[i], usage2));
         }
