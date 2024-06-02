@@ -4,10 +4,10 @@ import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.chart.CategoryAxis;
-import javafx.beans.binding.Bindings;
-import javafx.scene.layout.VBox;
+
 
 public class AppController {
     @FXML private ComboBox<String> companyOneComboBox;
@@ -21,6 +21,7 @@ public class AppController {
     @FXML private TextField baseRateCompanyTwo;
     @FXML private TextField tduCompanyOne;
     @FXML private TextField tduCompanyTwo;
+    @FXML private TextArea comparisonReport;
 
     @FXML
     public void initialize() {
@@ -59,15 +60,22 @@ public class AppController {
         TextField[] wattages = {janWattage, febWattage, marWattage, aprWattage, mayWattage, junWattage, julWattage, augWattage, sepWattage, octWattage, novWattage, decWattage};
         String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
+        StringBuilder report = new StringBuilder("Monthly Cost Comparison:\n");
+        report.append(String.format("%-10s %-15s %-15s\n", "Month", "Company 1 ($)", "Company 2 ($)"));
+
         for (int i = 0; i < months.length; i++) {
             double usage1 = getWattageFromTextField(wattages[i]) * rate1 + (base1 + tdu1);
             double usage2 = getWattageFromTextField(wattages[i]) * rate2 + (base2 + tdu2);
             series1.getData().add(new XYChart.Data<>(months[i], usage1));
             series2.getData().add(new XYChart.Data<>(months[i], usage2));
+
+            report.append(String.format("%-10s %-15.2f %-15.2f\n", months[i], usage1, usage2));
         }
 
         lineChart.getData().clear();
         lineChart.getData().addAll(series1, series2);
+
+        comparisonReport.setText(report.toString());
     }
 
     private void populateCompanyChoices() {

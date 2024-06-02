@@ -61,6 +61,11 @@
                 </yAxis>
             </LineChart>
             <Button onAction="#compareCompanies" text="Compare" />
+
+            <!-- TextArea to display results -->
+            <Label style="-fx-font-weight: bold;" text="Comparison Report:" />
+            <TextArea fx:id="comparisonReport" prefWidth="600" prefHeight="200" wrapText="true" />
+
         </VBox>
     </VBox>
 </ScrollPane>
