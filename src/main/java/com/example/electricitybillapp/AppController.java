@@ -61,15 +61,15 @@ public class AppController {
         String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
         StringBuilder report = new StringBuilder("Monthly Cost Comparison:\n");
-        report.append(String.format("%-10s %-15s %-15s\n", "Month", "Company 1 ($)", "Company 2 ($)"));
+        report.append(String.format("%-10s %-15s %-15s %-15s\n", "Month", "Company A ($)", "Company B ($)", "Difference (%)"));
 
         for (int i = 0; i < months.length; i++) {
             double usage1 = getWattageFromTextField(wattages[i]) * rate1 + (base1 + tdu1);
             double usage2 = getWattageFromTextField(wattages[i]) * rate2 + (base2 + tdu2);
             series1.getData().add(new XYChart.Data<>(months[i], usage1));
             series2.getData().add(new XYChart.Data<>(months[i], usage2));
-
-            report.append(String.format("%-10s %-15.2f %-15.2f\n", months[i], usage1, usage2));
+            double difference = ((usage2 - usage1) / usage1) * 100;
+            report.append(String.format("%-10s %-15.2f %-15.2f %-15.2f\n", months[i], usage1, usage2, difference));
         }
 
         lineChart.getData().clear();

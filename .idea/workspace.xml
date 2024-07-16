@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="893e0e7d-97d7-4019-9744-80814acf390f" name="Changes" comment="Added the TDU and base rate text fields as well as updating logic to add everything up correctly.">
+    <list default="true" id="893e0e7d-97d7-4019-9744-80814acf390f" name="Changes" comment="Added a report Text Area under the line chart to show the prices for each month for Company 1 and Company 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/app-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/app-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,12 @@
       <workItem from="1716834903773" duration="8598000" />
       <workItem from="1717008769951" duration="1262000" />
       <workItem from="1717356334079" duration="150000" />
-      <workItem from="1717358447644" duration="2101000" />
+      <workItem from="1717358447644" duration="2430000" />
+      <workItem from="1718749807877" duration="627000" />
+      <workItem from="1719858254640" duration="523000" />
+      <workItem from="1719862379110" duration="5000" />
+      <workItem from="1719867215468" duration="646000" />
+      <workItem from="1721154433156" duration="5882000" />
     </task>
     <task id="LOCAL-00001" summary="Created Imports, Application class, start method and main method.">
       <created>1715634918686</created>
@@ -118,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716864005213</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added a report Text Area under the line chart to show the prices for each month for Company 1 and Company 2">
+      <created>1717360855768</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717360855768</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +142,7 @@
     <MESSAGE value="Created VBOX for textfield and left aligned, dropped down menu now contains companies to pick from, combobox 1 &amp; 2 display companies chosen" />
     <MESSAGE value="Created Hbox's to make my text fields horizontally placed 4x3. Did the same for the rates and combobox" />
     <MESSAGE value="Added the TDU and base rate text fields as well as updating logic to add everything up correctly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the TDU and base rate text fields as well as updating logic to add everything up correctly." />
+    <MESSAGE value="Added a report Text Area under the line chart to show the prices for each month for Company 1 and Company 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a report Text Area under the line chart to show the prices for each month for Company 1 and Company 2" />
   </component>
 </project>
