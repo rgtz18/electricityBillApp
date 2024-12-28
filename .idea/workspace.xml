@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="893e0e7d-97d7-4019-9744-80814acf390f" name="Changes" comment="Added a report differences column to the Text Area and to formated it to show numerical difference in percentages">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/electricitybillapp/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/app-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/electricitybillapp/app-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="893e0e7d-97d7-4019-9744-80814acf390f" name="Changes" comment="Added a report differences column to the Text Area and to formated it to show numerical difference in percentages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +81,7 @@
       <workItem from="1726970866083" duration="43000" />
       <workItem from="1728683094985" duration="447000" />
       <workItem from="1729736659758" duration="348000" />
-      <workItem from="1735410651339" duration="1384000" />
+      <workItem from="1735410651339" duration="1621000" />
     </task>
     <task id="LOCAL-00001" summary="Created Imports, Application class, start method and main method.">
       <created>1715634918686</created>
@@ -143,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1721166090033</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added a report differences column to the Text Area and to formated it to show numerical difference in percentages">
+      <created>1735412242445</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735412242445</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
